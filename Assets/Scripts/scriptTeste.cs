@@ -6,7 +6,7 @@ using Vuforia;
 public class scriptTeste : MonoBehaviour, IVirtualButtonEventHandler {
 
 	public GameObject btRed, btBlue, btYellow, btBlack, cube;
-	// Declaring our buttons, and our cube. They should be associated in the main scene, but it could also be done by GameObject.Find()
+	// Declaring our buttons, and our cube. This way, they should be associated in the main scene, but it could also be done by GameObject.Find()
 	void Start () {
 		//Registers the event handler for each virtual button.
 		btRed.GetComponent<VirtualButtonBehaviour>().RegisterEventHandler(this);
